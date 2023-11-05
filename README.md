@@ -11,7 +11,7 @@ Our web-app, Home Sweet Home, is a C++ program that helps users determine their 
 
 ## Usage:
 
-1. Clone the repository to your local machine: git clone https://github.com/Kumud-Arora/HackUTD-2023.git
-2. Compile the `main.cpp` file using a C++ compiler: g++ main.cpp -o home_eligibility_checker
-3. Run the program: ./home_eligibility_checker
+1. Clone the repository to your local machine: git clone https://github.com/snehanangunoori/HackUTD-2023.git.
+2. In order to test the cpp file, compile the `main.cpp` file using a C++ compiler: g++ main.cpp -o homesweethome.
+3. Run the web application: www.homesweethome.select.
 4. Follow the prompts to input your information.
