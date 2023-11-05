@@ -2,8 +2,9 @@
 <html>
 
 <head>
-  <title>House1House0</title>
+  <title>HomeSweetHome</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -11,34 +12,34 @@
   <h2>Are you Ready to Buy a Home?</h2>
   <p> Please fully fill out the form to get accurate results.</p>
 
-  <form action="/submit" method="post" id ="myForm">
-    
-    <label for="id">ID:</label><br>
-    <input type="number" id="id" name="id" ><br>
-    
-    <label for="mcp">Monthly Car Payment:</label><br>
-    <input type="number" id="mcp" name="mcp"><br>
-
-    <label for="slp">Student Loan Payment:</label><br>
-    <input type="number" id="slp" name="slp"><br>
-
-    <label for="mmp">Monthly Mortgage Payment:</label><br>
-    <input type="number" id="mmp" name="mmp"><br>
-
-    <label for="cs">Credit Score:</label><br>
-    <input type="number" id="cs" name="cs"><br>
+  <form action="/submit" method="post" id="myForm">
 
     <label for="gmi">Gross Monthly Income:</label><br>
-    <input type="number" id="gmi" name="gmi"><br>
+    <input type="number" id="gmi" name="gmi" step=0.01><br>
 
     <label for="mcp">Monthly Credit Card Payment:</label><br>
-    <input type="number" id="mccp" name="mccp"><br>
+    <input type="number" id="mccp" name="mccp" step=0.01><br>
+
+    <label for="mcp">Monthly Car Payment:</label><br>
+    <input type="number" id="mcp" name="mcp" step=0.01><br>
+
+    <label for="slp">Student Loan Payment:</label><br>
+    <input type="number" id="slp" name="slp" step=0.01><br>
 
     <label for="hav">Home Appraised Value:</label><br>
-    <input type="number" id="hav" name="hav"><br>
+    <input type="number" id="hav" name="hav" step=0.01><br>
 
     <label for="dpa">Down Payment Amount:</label><br>
-    <input type="number" id="dpa" name="dpa"><br>
+    <input type="number" id="dpa" name="dpa" step=0.01><br>
+
+    <label for="loan">Loan:</label><br>
+    <input type="number" id="loan" name="loan" step=0.01><br>
+
+    <label for="mmp">Monthly Mortgage Payment:</label><br>
+    <input type="number" id="mmp" name="mmp" step=0.01><br>
+
+    <label for="cs">Credit Score:</label><br>
+    <input type="number" id="cs" name="cs" step=0.01><br>
 
     <input type="submit" value="Submit">
 
