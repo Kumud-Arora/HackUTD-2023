@@ -69,15 +69,13 @@ bool FEDTI()
         decision2 = false;
     }
 
-    cout << "You're FEDTI is " << fedti << "." << endl;
-
     return decision2;
 }
 
 int main()
 {
 
-    cout << "Hello there! This program will help you idnetify whether you are "
+    cout << "Hello there! This program will help you identify whether you are "
             "eligible to purchase a home.";
 
     cout << " You will be asked to provide some financial information to "
@@ -118,10 +116,12 @@ int main()
     if (DTI() == false || FEDTI() == false || ltv == false || creditScore < 640)
     {
         potential = false;
+        cout << "You're FEDTI is " << fedti << "." << endl;
         cout << "You are not eligible to purchase a house. " << endl;
     }
     else
     {
+        cout << "You're FEDTI is " << fedti << "." << endl;
         cout << "You are eligible!!";
     }
 
