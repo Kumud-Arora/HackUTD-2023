@@ -1,29 +1,29 @@
-let carPayment = document.getElementById("mcp").value;
-let ccPayment = document.getElementById("mccp").value;
-let monthlyDebt = 0;
-let grossIncome = document.getElementById("gmi").value
-let mortgagePayment = document.getElementById("mmp").value
+let carPayment = +document.getElementById("mcp").value;
+let ccPayment = +document.getElementById("mccp").value;
+let monthlyDebt;
+let grossIncome = +document.getElementById("gmi").value;
+let mortgagePayment = +document.getElementById("mmp").value;
 let decision1; 
 let boolvalue; 
 let potential; 
 let boolStatement; 
-let creditScore = document.getElementById("cs").value
+let creditScore = +document.getElementById("cs").value;
 let dti_percent;
-let loan = document.getElementById("loan").value;
-let downPayment = document.getElementById("dpa").value;
-let HomeValue = document.getElementById("hav").value;
+let loan = +document.getElementById("loan").value;
+let downPayment = +document.getElementById("dpa").value;
+let HomeValue = +document.getElementById("hav").value;
 let ltv;
 let fedti;
-let studentLoan = document.getElementById("slp").value;
+let studentLoan = +document.getElementById("slp").value;
 
 function DTI() {
 
   // calculating debt
   monthlyDebt = carPayment + ccPayment + mortgagePayment + studentLoan;
   dti_percent = (monthlyDebt / grossIncome) * 100;
-
+  
   // displaying DTI
-  console.log(`Your debt income ratio is ${dti_percent} percent.`); //still need to fix this later
+  console.log(`Your debt income ratio is ${dti_percent} percent.`); 
 
   if (dti_percent <= 43 && dti_percent >= 0) {
     decision1 = true;
