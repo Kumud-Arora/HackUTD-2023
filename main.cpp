@@ -5,7 +5,7 @@ using namespace std;
 double carPayment, ccPayment, monthlyDebt, grossIncome, mortgagePayment;
 bool decision1, boolvalue, potential, boolStatement;
 int creditScore, dti_percent;
-double loan, downPayment, HomeValue, ltv, fedti;
+double loan, downPayment, HomeValue, ltv, fedti, studentloan;
 char contProgram;
 
 bool DTI()
@@ -19,9 +19,11 @@ bool DTI()
     cin >> ccPayment;
     cout << "Enter your mortgage payment per month: ";
     cin >> mortgagePayment;
+    cout << "Enter your studentloan per month: ";
+    cin >> mortgagePayment;
 
     // calculting debt
-    monthlyDebt = carPayment + ccPayment + mortgagePayment;
+    monthlyDebt = carPayment + ccPayment + mortgagePayment + studentloan;
     dti_percent = (monthlyDebt / grossIncome) * 100;
 
     // displaying DTI
@@ -69,15 +71,13 @@ bool FEDTI()
         decision2 = false;
     }
 
-    cout << "You're FEDTI is " << fedti << "." << endl;
-
     return decision2;
 }
 
 int main()
 {
 
-    cout << "Hello there! This program will help you idnetify whether you are "
+    cout << "Hello there! This program will help you identify whether you are "
             "eligible to purchase a home.";
 
     cout << " You will be asked to provide some financial information to "
@@ -94,7 +94,9 @@ int main()
     cout << "Enter how much you anticipate your down payment to be: ";
     cin >> downPayment;
 
-    loan = HomeValue - downPayment;
+    cout << "Enter your loan?: ";
+    cin >> loan;
+
     ltv = (loan / HomeValue) * 100;
 
     if (creditScore >= 640)
@@ -118,10 +120,12 @@ int main()
     if (DTI() == false || FEDTI() == false || ltv == false || creditScore < 640)
     {
         potential = false;
+        cout << "You're FEDTI is " << fedti << "." << endl;
         cout << "You are not eligible to purchase a house. " << endl;
     }
     else
     {
+        cout << "You're FEDTI is " << fedti << "." << endl;
         cout << "You are eligible!!";
     }
 
