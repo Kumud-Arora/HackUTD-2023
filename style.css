@@ -47,7 +47,7 @@ form {
   border-radius: 5px;
 }
 
-input[type=number]:focus{
+input[type=number]:focus {
   background-color: rgb(218, 223, 214);
 }
 
