@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #dfedcf;
+  background-color: #addae6;
 }
 
 h2 {
@@ -18,7 +18,7 @@ p {
 }
 
 #myForm {
-  background-color: #f9f9f9;
+  background-color: #e9edbb;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -41,7 +41,7 @@ input[type=number] {
 form {
   max-width: 300px;
   margin: 0 auto;
-  background: #f9f9f9;
+  background: #e9edbb;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
