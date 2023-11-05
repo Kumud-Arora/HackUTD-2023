@@ -19,4 +19,3 @@ Our web-app, Home Sweet Home, is a C++ program that helps users determine their 
 
 
 
-
