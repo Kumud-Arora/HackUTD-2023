@@ -15,7 +15,3 @@ Our web-app, Home Sweet Home, is a C++ program that helps users determine their 
 2. Compile the `main.cpp` file using a C++ compiler: g++ main.cpp -o home_eligibility_checker
 3. Run the program: ./home_eligibility_checker
 4. Follow the prompts to input your information.
-
-
-
-
