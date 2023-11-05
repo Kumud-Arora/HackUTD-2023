@@ -23,7 +23,7 @@ function DTI() {
   dti_percent = (monthlyDebt / grossIncome) * 100;
 
   // displaying DTI
-  console.log(`Your debt income ratio is ${dti_percent} percent.`);
+  console.log(`Your debt income ratio is ${dti_percent} percent.`); //still need to fix this later
 
   if (dti_percent <= 43 && dti_percent >= 0) {
     decision1 = true;
@@ -57,8 +57,6 @@ function FEDTI() {
     decision2 = false;
   }
 
-  console.log(`You're FEDTI is ${fedti}.`);
-
   return decision2;
 }
 
@@ -84,7 +82,9 @@ if (
   creditScore < 640
 ) {
   potential = false;
+    console.log(`You're FEDTI is ${fedti}.`);
   console.log("You are not eligible to purchase a house.");
 } else {
+  console.log(`You're FEDTI is ${fedti}.`);
   console.log("You are eligible!!");
 }
